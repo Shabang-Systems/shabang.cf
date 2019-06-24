@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shabang</title>
+        <title>#!/Shabang</title>
         <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
         <link href="css/masters/A.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <div class="container-fluid">
-                        <div class="row no-gutters">
-                            <div class="col-auto d-flex">
-                                <img class="d-none d-sm-block" id="header-slug" src="resources/slug.png" width="50em" height="50em" alt="">
-                            </div>
-                            <div class="col-auto d-flex" style="padding: 0; align-content: initial">
-                                <h1 class="header-text d-none d-sm-block" style="padding-left: 7px">/Shabang</h1>
-                                <h1 class="header-text d-block d-sm-none">#!/Shabang</h1>
+    <body onload="loadScripts()">
+        <div id="loader" style="margin:auto;height: 200px;width: 200px;position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;">
+            <h1 class="header-text">#!/Shabang</h1>
+            <br>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h1 class="body-header">Load!</h1>
+        </div>
+        <div id="content-wrapper" style="display: none">
+            <div id="nav-wrapper">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <div class="container-fluid">
+                            <div class="row no-gutters">
+                                <div class="col-auto d-flex">
+                                    <img class="d-none d-sm-block" id="header-slug" src="resources/slug.png" width="50em" height="50em" alt="">
+                                </div>
+                                <div class="col-auto d-flex" style="padding: 0; align-content: initial">
+                                    <h1 class="header-text d-none d-sm-block" style="padding-left: 7px">/Shabang</h1>
+                                    <h1 class="header-text d-block d-sm-none">#!/Shabang</h1>
+                                </div>
                             </div>
                         </div>
+                    </a>
+                </nav>
+            </div>
+            <div>
+                <h1 class="body-header">Amazing physics going on,</h1>
+                <h2 class="body-subhead" style="padding-top: 10px">(plays jeopardy music.)</h2>
+                <div style="padding-top: 50px;display:grid;place-items:center">
+                    <div style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: black; width: 25%; ">
+                        <p class="center-text">
+                            We are working hard on this website: exciting things will magically appear very shortly.
+                            <br> <br>
+                            -- <a href="https://twitter.com/jemokajack" style="text-decoration: none">@jemoka</a>, <a href="https://twitter.com/max_gertner" style="text-decoration: none">@max_gertner</a>
+                            and <br>
+                            your friendly neighborhood #!/Shabang team.    
+                        </p>       
                     </div>
-                </a>
-            </nav>
-        </div>
-        <div>
-            <h1 class="body-header">Amazing physics going on,</h1>
-            <h2 class="body-subhead" style="padding-top: 10px">(plays jeopardy music.)</h2>
-            <div style="padding-top: 50px;display:grid;place-items:center">
-                <div style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: black; width: 25%; ">
-                    <p style="padding-top: 10px; font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 0.90rem; text-align: center">
-                        We are working hard on this website: exciting things will magically appear very shortly.
-                        <br> <br>
-                        — <a href="https://twitter.com/jemokajack" style="text-decoration: none">@jemoka</a>, <a href="https://twitter.com/max_gertner" style="text-decoration: none">@max_gertner</a>
-                        <br>
-                        and your friendly neiborhood #!/Shabang team.    
-                    </p>        
+                    <br><br>
+                    <p class="center-text">Or you can wait. I will wait with you.</p>
                 </div>
             </div>
         </div>
         <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script>
+            var tmOut; 
+
+            function loadScripts() {
+                // Load your scripty scripts here, whatever.
+                // showpage();
+                tmOut = setTimeout(showPage, 500);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content-wrapper").style.display = "block";
+            }
+        </script>
     </body>
 </html>
