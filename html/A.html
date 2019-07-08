@@ -13,13 +13,20 @@ unless explicitly stated otherwise or where it is prohibited by law -->
         <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
         <link href="css/masters/A.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="resources/slug.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body onload="loadScripts()">
-        <div id="content-wrapper">
-            <div id="nav-wrapper" style="display: none">
+        <div id="loader" style="margin:auto;height: 200px;width: 200px;position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;">
+            <h1 class="header-text">#!/Shabang</h1>
+            <br>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h1 class="body-header">Load!</h1>
+        </div>
+        <div id="content-wrapper" style="display: none">
+            <div id="nav-wrapper">
+                <!-- Navs could change here -->
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
                         <div class="container-fluid">
@@ -36,25 +43,10 @@ unless explicitly stated otherwise or where it is prohibited by law -->
                     </a>
                 </nav>
             </div>
-            <div id="story-wrapper" style="display:none">
-                <div style="padding-top: 50px;display:grid;place-items:center">
-                    <div id="center-box" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: black;  ">
-                        <p class="center-text">
-                            We are working hard on this website: exciting things will magically appear very shortly.
-                            <br> <br>
-                            -- <a href="https://twitter.com/jemokajack" style="text-decoration: none">@jemoka</a>, <a href="https://twitter.com/max_gertner" style="text-decoration: none">@max_gertner</a>
-                            and <br>
-                            your friendly neighborhood #!/Shabang team.    
-                        </p>       
-                    </div>
-                    <br><br>
-                    <p class="center-text">Or you can wait. I will wait with you.</p>
-                </div>
+            <div id="story-wrapper">
+                <!-- Put Ye Stories Here! -->
             </div>
             <div id="splash", style="position: absolute; z-index:10;">
-                <h1 class="body-header" id="huge-center-text">Solutions That <p style="font-weight: 800">#!/Bangs</p></h1>
-                <h2 class="body-subhead" style="padding-top: 10px; font-size: 4vw">(and perhaps pings too)</h2>
-            </div>
         </div>
         <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -68,15 +60,8 @@ unless explicitly stated otherwise or where it is prohibited by law -->
             }
 
             function showPage() {
-                $("#splash").animate({"opacity": "0"}, 1000, function(){
-                    $("#splash").css("display", "none");
-                    $("#nav-wrapper").css("opacity", "0");
-                    $("#story-wrapper").css("opacity", "0");
-                    $("#nav-wrapper").css("display", "block");
-                    $("#story-wrapper").css("display", "block");
-                    $("#nav-wrapper").animate({"opacity": "1"}, 300);
-                    $("#story-wrapper").animate({"opacity": "1"}, 300);
-                });
+                $("#loader").css("display", "none");
+                $("#content-wrapper").css("display", "block");
             }
         </script>
     </body>

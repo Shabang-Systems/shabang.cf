@@ -22,6 +22,13 @@ unless explicitly stated otherwise or where it is prohibited by law */
     #center-box {
         width: 30%;
     }
+
+    #huge-center-text {
+        font-size: 190px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -32,6 +39,13 @@ unless explicitly stated otherwise or where it is prohibited by law */
 
     #center-box {
         width: 30%;
+    }
+
+    #huge-center-text {
+        font-size: 150px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
  
@@ -44,6 +58,13 @@ unless explicitly stated otherwise or where it is prohibited by law */
     #center-box {
         width: 50%;
     }
+
+    #huge-center-text {
+        font-size: 85px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
  
 /* Landscape phones and down */
@@ -54,5 +75,13 @@ unless explicitly stated otherwise or where it is prohibited by law */
 
     #center-box {
         width: 75%;
+    }
+
+    #huge-center-text {
+        font-size: 13vw;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin:0 auto;
     }
 }
