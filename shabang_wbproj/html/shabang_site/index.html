@@ -6,14 +6,15 @@ unique kind of ideology that future generations will look up to.
 We are #!/Shabang. (c) 2019/2020 Shabang Systems, LLC. All rights reserved
 unless explicitly stated otherwise or where it is prohibited by law -->
 
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>#!/Shabang</title>
-        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static "shabang_site/css/bootstrap/bootstrap.min.css" %}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-        <link href="css/masters/A.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
+        <link href="{% static "shabang_site/css/masters/A.css" %}" rel="stylesheet">
+        <link href="{% static "shabang_site/css/index.css" %}" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="resources/slug.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -25,7 +26,7 @@ unless explicitly stated otherwise or where it is prohibited by law -->
                         <div class="container-fluid">
                             <div class="row no-gutters">
                                 <div class="col-auto d-flex">
-                                    <img class="d-none d-sm-block" id="header-slug" src="resources/slug.png" width="50em" height="50em" alt="">
+                                    <img class="d-none d-sm-block" id="header-slug" src="{% static "shabang_site/resources/slug.png" %}" width="50em" height="50em" alt="">
                                 </div>
                                 <div class="col-auto d-flex" style="padding: 0; align-content: initial">
                                     <h1 class="header-text d-none d-sm-block" style="padding-left: 7px">/Shabang</h1>
@@ -53,10 +54,10 @@ unless explicitly stated otherwise or where it is prohibited by law -->
             </div>
             <div id="splash", style="position: absolute; z-index:10;">
                 <h1 class="body-header" id="huge-center-text">Solutions That <p style="font-weight: 800">#!/Bangs</p></h1>
-                <h2 class="body-subhead" style="padding-top: 10px; font-size: 4vw">(and perhaps pings too)</h2>
+                <h2 class="body-subhead" style="padding-top: 10px; font-size: 4vw">Load!</h2>
             </div>
         </div>
-        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="{% static "shabang_site/js/bootstrap/bootstrap.min.js" %}"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script>
             var tmOut; 
@@ -64,7 +65,7 @@ unless explicitly stated otherwise or where it is prohibited by law -->
             function loadScripts() {
                 // Load your scripty scripts here, whatever.
                 // showpage();
-                tmOut = setTimeout(showPage, 500);
+                tmOut = setTimeout(showPage, 2000);
             }
 
             function showPage() {
