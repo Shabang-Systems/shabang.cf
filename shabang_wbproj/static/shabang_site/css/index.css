@@ -1,0 +1,87 @@
+/* Bada Bing, Bada Boom
+The thoughts, ideas, and opinions both spoken and internalized
+are the forces, that traverse all platforms, all standards
+and all norms to form their unique class, unique style, and a
+unique kind of ideology that future generations will look up to.
+We are #!/Shabang. (c) 2019/2020 Shabang Systems, LLC. All rights reserved
+unless explicitly stated otherwise or where it is prohibited by law */
+
+.center-text {
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+    .center-text {
+        font-size: 0.90rem;
+    }
+    
+    #center-box {
+        width: 30%;
+    }
+
+    #huge-center-text {
+        font-size: 190px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) { 
+    .center-text {
+        font-size: 0.90rem;
+    }
+
+    #center-box {
+        width: 30%;
+    }
+
+    #huge-center-text {
+        font-size: 150px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .center-text {
+        font-size: 0.75rem;
+    }
+
+    #center-box {
+        width: 50%;
+    }
+
+    #huge-center-text {
+        font-size: 85px;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .center-text {
+        font-size: 0.70rem;
+    }
+
+    #center-box {
+        width: 75%;
+    }
+
+    #huge-center-text {
+        font-size: 13vw;
+        font-weight: 600;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin:0 auto;
+    }
+}
