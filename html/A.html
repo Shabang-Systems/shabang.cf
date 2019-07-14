@@ -14,6 +14,8 @@ unless explicitly stated otherwise or where it is prohibited by law -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
         <link href="css/masters/A.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="resources/slug.png"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body onload="loadScripts()">
@@ -27,12 +29,12 @@ unless explicitly stated otherwise or where it is prohibited by law -->
         <div id="content-wrapper" style="display: none">
             <div id="nav-wrapper">
                 <!-- Navs could change here -->
-                <nav class="navbar navbar-light bg-light">
+                <nav class="navbar navbar-expand-sm navbar-light" style="box-shadow: 0px 24px 2px -25px black;">
                     <a class="navbar-brand" href="#">
                         <div class="container-fluid">
                             <div class="row no-gutters">
-                                <div class="col-auto d-flex">
-                                    <img class="d-none d-sm-block" id="header-slug" src="resources/slug.png" width="50em" height="50em" alt="">
+                                    <div class="col-auto d-flex">
+                                    <img class="d-none d-sm-block" id="header-slug" src="resources/slug.png" alt="">
                                 </div>
                                 <div class="col-auto d-flex" style="padding: 0; align-content: initial">
                                     <h1 class="header-text d-none d-sm-block" style="padding-left: 7px">/Shabang</h1>
@@ -41,6 +43,25 @@ unless explicitly stated otherwise or where it is prohibited by law -->
                             </div>
                         </div>
                     </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Software</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div id="story-wrapper">
@@ -48,8 +69,7 @@ unless explicitly stated otherwise or where it is prohibited by law -->
             </div>
             <div id="splash", style="position: absolute; z-index:10;">
         </div>
-        <script src="js/bootstrap/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        
         <script>
             var tmOut; 
 

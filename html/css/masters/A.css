@@ -80,6 +80,15 @@ a:hover {
         font-weight: 600;
         font-size: 3.5em;
     }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    #header-slug {
+        width: 2.5em;
+        height: 2.5em;
+    }
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -104,6 +113,15 @@ a:hover {
         font-weight: 600;
         font-size: 2.5em;
     }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    #header-slug {
+        width: 2.5em;
+        height: 2.5em;
+    }
 }
  
 /* Landscape phone to portrait tablet */
@@ -112,7 +130,7 @@ a:hover {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .body-header {
@@ -128,6 +146,19 @@ a:hover {
         font-weight: 600;
         font-size: 1.5em;
     }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .nav-item {
+        padding-left: 1px;
+    }
+
+    #header-slug {
+        width: 2em;
+        height: 2em;
+    }
 }
  
 /* Landscape phones and down */
@@ -136,7 +167,7 @@ a:hover {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     .body-header {
@@ -151,5 +182,16 @@ a:hover {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 1.25em;
+    }
+
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+
+    #header-slug {
+        width: 2.5em;
+        height: 2.5em;
     }
 }
