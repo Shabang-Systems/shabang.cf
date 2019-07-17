@@ -81,6 +81,10 @@ a:hover {
         font-size: 3.5em;
     }
 
+    .mobile-spacer {
+        display: none
+    }
+
     .nav-link {
         font-size: 20px;
     }
@@ -89,6 +93,7 @@ a:hover {
         width: 2.5em;
         height: 2.5em;
     }
+
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -107,11 +112,19 @@ a:hover {
         font-size: 3em;
     }
 
+    .mobile-spacer {
+        display: none
+    }
+
     .body-subhead {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 2.5em;
+    }
+
+    .mobile-spacer {
+        display: none
     }
 
     .nav-link {
@@ -138,6 +151,10 @@ a:hover {
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 2em;
+    }
+
+    .mobile-spacer {
+        display: none
     }
 
     .body-subhead {
@@ -182,6 +199,10 @@ a:hover {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 1.25em;
+    }
+
+    .mobile-spacer {
+        display: block;
     }
 
 
