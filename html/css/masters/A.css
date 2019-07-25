@@ -7,8 +7,20 @@ We are #!/Shabang. (c) 2019/2020 Shabang Systems, LLC. All rights reserved
 unless explicitly stated otherwise or where it is prohibited by law */
 
 
+/* html,
+body {
+  height: 100%;
+  margin: 0
+} */
+
+
+body{
+    min-height: 100vh;
+}
+
 body {
     /* min-width: 430px; */
+    /* display: flex; */
 }
 
 a {

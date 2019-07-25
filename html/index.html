@@ -12,6 +12,7 @@ unless explicitly stated otherwise or where it is prohibited by law -->
         <title>#!/Shabang</title>
         <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
         <link href="css/masters/A.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="resources/slug.png"/>
@@ -20,7 +21,8 @@ unless explicitly stated otherwise or where it is prohibited by law -->
     <body onload="loadScripts()">
         <div id="content-wrapper">
             <div id="nav-wrapper" style="display: none">
-                <nav class="navbar navbar-expand-sm navbar-light" style="box-shadow: 0px 24px 2px -25px black;">
+                <!-- style="box-shadow: 0px 24px 2px -25px black;"-->
+                <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #f0f0f088">
                     <a class="navbar-brand" href="#">
                         <div class="container-fluid">
                             <div class="row no-gutters">
@@ -55,32 +57,35 @@ unless explicitly stated otherwise or where it is prohibited by law -->
                     </div>
                 </nav>
             </div>
-            <div id="story-wrapper" style="display:none">
-                <div style="padding-top: 50px;display:grid;place-items:center">
-                    <div id="center-box" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: black;  ">
-                        <p class="center-text">
-                            We are working hard on this website: exciting things will magically appear very shortly.
-                            <br> <br>
-                            -- <a href="https://twitter.com/jemokajack" style="text-decoration: none">@jemoka</a>, <a href="https://twitter.com/max_gertner" style="text-decoration: none">@max_gertner</a>
-                            and <br>
-                            your friendly neighborhood #!/Shabang team.    
-                        </p>       
-                    </div>
-                    <br><br>
-                    <p class="center-text">Or you can wait. I will wait with you.</p>
-                </div>
-            </div>
-            <div id="splash", style="position: absolute; z-index:10;">
+            <div id="splash", style="position: absolute; z-index:10">
                 <div class="mobile-spacer">
                     <!--Stupid spacer solution because of lack of position flexiblity-->
                     <br><br><br><br><br><br>
                 </div>
-                <h1 class="body-header" id="huge-center-text">Solutions That <p style="font-weight: 800">#!/Bangs</p></h1>
-                <h2 class="body-subhead" style="padding-top: 10px; font-size: 4vw">(and perhaps pings too)</h2>
+                <div style="text-align: center; vertical-align: middle">
+                    <h1 class="body-header" id="huge-center-text">Solutions That <p style="font-weight: 800">#!/Bangs</p></h1>
+                    <h2 class="body-subhead" style="padding-top: 10px; font-size: 4vw">Load! Site.</h2>
+                </div>
+            </div>
+            <div id="story-wrapper" style="display:none">
+                <div id="landing-background">
+                    <div id="scroll-container">
+                        <div id="scroll-set">
+                            <h1 id="home-scroll-intro">We create to</h1>
+                            <h1 id="home-scroll-0" class="home-scroll">inspire.</h1>
+                            <h1 id="home-scroll-1" class="home-scroll">innovate.</h1>
+                            <h1 id="home-scroll-2" class="home-scroll">change.</h1>
+                            <h1 id="home-scroll-3" class="home-scroll">have impact.</h1>
+                        </div>
+                    </div>
+                    <div id="intro-blurb">
+                        We are a studio, a creative agency, a development group.
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
         <script>
             var tmOut; 
 
@@ -100,7 +105,50 @@ unless explicitly stated otherwise or where it is prohibited by law -->
                     $("#nav-wrapper").animate({"opacity": "1"}, 300);
                     $("#story-wrapper").animate({"opacity": "1"}, 300);
                 });
+                tmOut = setTimeout(chooseScroll, 1000)
             }
+
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            function choose(choices) {
+                var index = Math.floor(Math.random() * choices.length);
+                return choices[index];
+            }
+
+            function chooseScroll() {
+                var scrollers = ["#home-scroll-0", "#home-scroll-1", "#home-scroll-2", "#home-scroll-3"];
+                let scroller = choose(scrollers);
+                $(scroller).css("display", "inline-block");
+            }
+
+            // async function scroll() {
+            //     var scrollers = ["#home-scroll-0", "#home-scroll-1", "#home-scroll-2", "#home-scroll-3"];
+            //     for (var i=0; i<=4; i++) {
+            //         if (i==1) {
+            //             await sleep(1500);
+            //         }
+            //         $(scrollers[i-1]).fadeTo(500, 0, function(){
+            //             $(scrollers[i]).css({
+            //                 "opacity":"0",
+            //                 "display":"inline-block",
+            //             })
+            //             $(scrollers[i]).animate({opacity:1}, 750)
+            //         })
+            //         if (i!=0 && i!=4) {
+            //             await sleep(2000);
+            //         }
+            //     }
+            //     $("#scroll-set").hide(1000, function(){
+            //         $("#branding").css({
+            //             "opacity":"0",
+            //             "display":"inline-block",
+            //         })
+            //         $("#branding").animate({opacity:1}, 750)
+            //     })
+            // }
+
         </script>
     </body>
 </html>

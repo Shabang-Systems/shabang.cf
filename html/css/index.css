@@ -13,12 +13,45 @@ unless explicitly stated otherwise or where it is prohibited by law */
     text-align: center
 }
 
+
+#scroll-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+#landing-background {
+    background-color: #f0f0f088;
+    height: 90vh;
+}
+
 /* Large desktop */
 @media (min-width: 1200px) { 
     .center-text {
         font-size: 0.90rem;
     }
     
+    .home-scroll {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        padding-left: 20px;
+        display: none;
+        font-size: 90px;
+    }
+
+    #scroll-set {
+        display: inline-block;
+        padding-left: 30px;
+    }
+    
+    #home-scroll-intro {
+        font-size: 90px;
+        font-weight: 700;
+        display: inline-block;
+    }
+
+
     #center-box {
         width: 30%;
     }
@@ -29,12 +62,38 @@ unless explicitly stated otherwise or where it is prohibited by law */
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    #intro-blurb {
+        position: relative;
+        padding-left: 70px;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 60px;
+    }
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1199px) { 
     .center-text {
         font-size: 0.90rem;
+    }
+
+    .home-scroll {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        padding-left: 10px;
+        display: none;
+        font-size: 70px;
+    }
+
+    #scroll-set {
+        display: inline-block;
+        padding-left: 30px;
+    }
+    
+    #home-scroll-intro {
+        font-size: 70px;
+        font-weight: 700;
+        display: inline-block;
     }
 
     #center-box {
@@ -47,6 +106,14 @@ unless explicitly stated otherwise or where it is prohibited by law */
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    #intro-blurb {
+        position: relative;
+        padding-left: 70px;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 50px;
+        transform: translateY(-36px);
+    }
 }
  
 /* Landscape phone to portrait tablet */
@@ -55,15 +122,43 @@ unless explicitly stated otherwise or where it is prohibited by law */
         font-size: 0.75rem;
     }
 
+    .home-scroll {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        padding-left: 7px;
+        display: none;
+        font-size: 55px;
+    }
+
+    #scroll-set {
+        display: inline-block;
+        padding-left: 30px;
+    }
+    
+    #home-scroll-intro {
+        font-size:55px;
+        font-weight: 700;
+        display: inline-block;
+    }
+
+
     #center-box {
         width: 50%;
     }
 
     #huge-center-text {
-        font-size: 130px;
+        font-size: 100px;
         font-weight: 600;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    #intro-blurb {
+        position: relative;
+        padding-left: 50px;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 30px;
+        transform: translateY(-50px);
     }
 }
  
@@ -72,6 +167,26 @@ unless explicitly stated otherwise or where it is prohibited by law */
     .center-text {
         font-size: 0.70rem;
     }
+
+    .home-scroll {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        display: none;
+        font-size: 13vw;
+    }
+
+    #scroll-set {
+        display: inline-block;
+        transform:  translateX(-15px) translateY(-50px);
+    }
+
+    
+    #home-scroll-intro {
+        font-size: 12vw;
+        font-weight: 700;
+        display: inline-block;
+    }
+
 
     #center-box {
         width: 75%;
@@ -83,5 +198,11 @@ unless explicitly stated otherwise or where it is prohibited by law */
         padding-left: 50px;
         padding-right: 50px;
         margin:0 auto;
+    }
+
+    #intro-blurb {
+        position: relative;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 25px;
     }
 }
