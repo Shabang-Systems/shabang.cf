@@ -158,7 +158,7 @@ unless explicitly stated otherwise or where it is prohibited by law */
         padding-left: 50px;
         font-family: 'Ubuntu Mono', monospace;
         font-size: 30px;
-        transform: translateY(-50px);
+        transform: translateY(-35px);
     }
 }
  
@@ -172,7 +172,8 @@ unless explicitly stated otherwise or where it is prohibited by law */
         font-family: 'Open Sans', sans-serif;
         font-weight: 200;
         display: none;
-        font-size: 13vw;
+        font-size: 9.5vw;
+        transform: translateY(15px);
     }
 
     #scroll-set {
@@ -182,9 +183,10 @@ unless explicitly stated otherwise or where it is prohibited by law */
 
     
     #home-scroll-intro {
-        font-size: 12vw;
+        font-size: 9.5vw;
         font-weight: 700;
         display: inline-block;
+        transform: translateY(15px);
     }
 
 
