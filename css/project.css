@@ -16,7 +16,6 @@
     margin: 20px;
     padding: 25px;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 
@@ -24,6 +23,10 @@ a:hover {
     border-bottom: 0;
     color: #f4f4f4 !important;
     text-decoration: 0 !important;
+}
+
+a {
+    cursor: pointer;
 }
 
 .project-title {
