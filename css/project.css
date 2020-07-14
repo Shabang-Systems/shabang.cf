@@ -1,0 +1,55 @@
+/*Bada Bing, Bada Boom*/
+/*The thoughts, ideas, and opinions both spoken and internalized*/
+/*are the forces, that traverse all platforms, all standards*/
+/*and all norms to form their unique class, unique style, and a*/
+/*unique kind of ideology that future generations will look up to.*/
+/*We are #!/Shabang. (c) 2019/2020 Shabang Systems, LLC. All rights reserved*/
+/*unless explicitly stated otherwise or where it is prohibited by law*/
+
+.jumbotron {
+    background-color: #f0f0f088;
+}
+
+.project {
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+a:hover {
+    border-bottom: 0;
+    color: #f4f4f4 !important;
+    text-decoration: 0 !important;
+}
+
+.project-title {
+    font-size: 30px;
+}
+
+.project-subtitle {
+    font-size: 16px;
+}
+
+.project-description {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.project-cf {
+    font-size: 11px;
+}
+
+.project-createe {
+    margin-left: 3px;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.row {
+    flex-wrap: wrap !important;
+}
+

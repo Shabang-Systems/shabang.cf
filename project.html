@@ -1,0 +1,134 @@
+<!-- Bada Bing, Bada Boom
+The thoughts, ideas, and opinions both spoken and internalized
+are the forces, that traverse all platforms, all standards
+and all norms to form their unique class, unique style, and a
+unique kind of ideology that future generations will look up to.
+We are #!/Shabang. (c) 2019/2020 Shabang Systems, LLC. All rights reserved
+unless explicitly stated otherwise or where it is prohibited by law -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>#!/Shabang</title>
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <link href="css/masters/A.css" rel="stylesheet">
+        <link href="css/project.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="resources/slug.png"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="loadScripts()">
+        <div id="loader" style="margin:auto;height: 200px;width: 200px;position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;display:none">
+            <h1 class="header-text">#!/Shabang</h1>
+            <br>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h1 class="body-header">Load!</h1>
+        </div>
+        <div id="content-wrapper" style="display: none">
+            <div id="nav-wrapper">
+                <!-- Navs could change here -->
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <div class="container-fluid">
+                            <div class="row no-gutters">
+                                    <div class="col-auto d-flex">
+                                    <img class="d-none d-sm-block" id="header-slug" src="resources/slug.png" alt="">
+                                </div>
+                                <div class="col-auto d-flex" style="padding: 0; align-content: initial">
+                                    <h1 class="header-text d-none d-sm-block" style="padding-left: 7px">/Shabang</h1>
+                                    <h1 class="header-text d-block d-sm-none">#!/Shabang</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./project.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./under-development.html">About</a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="story-wrapper">
+                <!-- Put Ye Stories Here! -->
+<!--                <div class="card" style="width: 18rem;">-->
+                    <!--<img class="card-img-left" src="..." alt="Card image cap">-->
+                    <!--<div class="card-body">-->
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4" style="font-family: 'Open Sans', sans-serif; font-weight: 600">What we are up to:</h1>
+                        <p class="lead" style="font-family: 'Ubuntu Mono', monospace;">Here's a selection of projects that we are building for our clients, and ourselves.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <a href="https://condution.shabang.cf/" style="color: white">
+                            <div style="background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('https://condution.shabang.cf/images/header-blr.png'); background-size: cover; color: white" class="col project">
+                                    <h1 class="project-title" style="color: #eaedad">Condution</h1>
+                                    <h3 class="project-subtitle">Tasks? Done.</h3>
+                                    <div class="project-description">Create tasks, manage due dates, and filter with powerful perspectives. <span class="project-createe">San Francisco 2020</span></div>
+                                    <div style="margin-top: 5px; "><span class="project-cf">Created</span><span class="project-createe">with 🥗 and open-source.</span></div>
+                            </div>
+                        </a>
+                        <a href="https://apps.apple.com/us/app/id1227104231" style="color: white">
+                            <div style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://is5-ssl.mzstatic.com/image/thumb/Purple127/v4/30/95/2d/30952d78-ca8a-89d8-274f-83f8a273a1f9/pr_source.png/1242x2208bb.png'); background-size: cover; color: white" class="col project">
+                                <h1 class="project-title"><span style="color: red">S</span><span style="color: rgb(96, 178, 88)">C</span><span style="color: rgb(90, 169, 220)">C</span></h1>
+                                    <h3 class="project-subtitle">Budget Easier.</h3>
+                                    <div class="project-description">Extremely minimalist budgeting app with a blue spin. <span class="project-createe">PRC 2017</span></div>
+                                    <div style="margin-top: 5px; "><span class="project-cf">Created for:</span><span class="project-createe">ourselves</span></div>
+                            </div>
+                        </a>
+                        <a href="https://www.clearawaythecobwebs.com/" style="color: white">
+                            <div style="background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('./resources/mathematics.png'); background-size: cover; color: white;" class="col project">
+                                <h1 class="project-title">CobWebs</h1>
+                                    <h3 class="project-subtitle">Math lessons, flipped.</h3>
+                                    <div class="project-description">Clear away those Pre-Algebra and Algebra-I cob webs with flipped online video lessons. <span class="project-createe">SFBA 2019</span></div>
+                                    <div style="margin-top: 5px; "><span class="project-cf">Created for:</span><span class="project-createe">CobWebs</span></div>
+                            </div>
+                        </a>
+                        <a href="https://mtlearningcenter.com/" style="color: white">
+                            <div style="background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('./resources/mtbanner.png'); background-size: cover; color: white;" class="col project">
+                                <h1 class="project-title">MTLearning</h1>
+                                    <h3 class="project-subtitle">SAT and Consulting</h3>
+                                    <div class="project-description">Creating classes and 1-1 tutoring for students in the SF bay area.<span class="project-createe">East Bay 2018</span></div>
+                                    <div style="margin-top: 5px; "><span class="project-cf">Created for:</span><span class="project-createe">MTLearningCentre</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="splash", style="position: absolute; z-index:10;">
+        </div>
+        
+        <script>
+            var tmOut; 
+
+            function loadScripts() {
+                // Load your scripty scripts here, whatever.
+                // showpage();
+                showPage();
+            }
+
+            function showPage() {
+                $("#loader").css("display", "none");
+                $("#content-wrapper").css("display", "block");
+            }
+        </script>
+    </body>
+</html>
