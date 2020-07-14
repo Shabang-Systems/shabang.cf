@@ -7,8 +7,15 @@ We are #!/Shabang. (c) 2019/2020 Shabang Systems, LLC. All rights reserved
 unless explicitly stated otherwise or where it is prohibited by law */
 
 
+/* html,
 body {
-    /* min-width: 430px; */
+  height: 100%;
+  margin: 0
+} */
+
+
+body{
+    min-height: 100vh;
 }
 
 a {
@@ -80,6 +87,20 @@ a:hover {
         font-weight: 600;
         font-size: 3.5em;
     }
+
+    .mobile-spacer {
+        display: none
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    #header-slug {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -98,11 +119,28 @@ a:hover {
         font-size: 3em;
     }
 
+    .mobile-spacer {
+        display: none
+    }
+
     .body-subhead {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 2.5em;
+    }
+
+    .mobile-spacer {
+        display: none
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    #header-slug {
+        width: 2.5em;
+        height: 2.5em;
     }
 }
  
@@ -112,7 +150,7 @@ a:hover {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .body-header {
@@ -122,11 +160,28 @@ a:hover {
         font-size: 2em;
     }
 
+    .mobile-spacer {
+        display: none
+    }
+
     .body-subhead {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 1.5em;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .nav-item {
+        padding-left: 1px;
+    }
+
+    #header-slug {
+        width: 2em;
+        height: 2em;
     }
 }
  
@@ -136,7 +191,7 @@ a:hover {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        font-size: 1.8em;
+        font-size: 8vw;
     }
 
     .body-header {
@@ -151,5 +206,20 @@ a:hover {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 1.25em;
+    }
+
+    .mobile-spacer {
+        display: block;
+    }
+
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+
+    #header-slug {
+        width: 2.5em;
+        height: 2.5em;
     }
 }
