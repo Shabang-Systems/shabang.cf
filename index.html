@@ -57,7 +57,7 @@ unless explicitly stated otherwise or where it is prohibited by law -->
                     </div>
                 </nav>
             </div>
-            <div id="splash", style="position: absolute; z-index:10">
+            <div id="splash", style="position: absolute; z-index:10; display: none;">
                 <div class="mobile-spacer">
                     <!--Stupid spacer solution because of lack of position flexiblity-->
                     <br><br><br><br><br><br>
@@ -92,20 +92,18 @@ unless explicitly stated otherwise or where it is prohibited by law -->
             function loadScripts() {
                 // Load your scripty scripts here, whatever.
                 // showpage();
-                tmOut = setTimeout(showPage, 500);
+                showPage();
             }
 
             function showPage() {
-                $("#splash").animate({"opacity": "0"}, 1000, function(){
-                    $("#splash").css("display", "none");
-                    $("#nav-wrapper").css("opacity", "0");
-                    $("#story-wrapper").css("opacity", "0");
-                    $("#nav-wrapper").css("display", "block");
-                    $("#story-wrapper").css("display", "block");
-                    $("#nav-wrapper").animate({"opacity": "1"}, 300);
-                    $("#story-wrapper").animate({"opacity": "1"}, 300);
-                });
-                tmOut = setTimeout(chooseScroll, 1000)
+                $("#splash").css("display", "none");
+                $("#nav-wrapper").css("opacity", "0");
+                $("#story-wrapper").css("opacity", "0");
+                $("#nav-wrapper").css("display", "block");
+                $("#story-wrapper").css("display", "block");
+                $("#nav-wrapper").animate({"opacity": "1"}, 300);
+                $("#story-wrapper").animate({"opacity": "1"}, 300);
+                chooseScroll();
             }
 
             function sleep(ms) {
